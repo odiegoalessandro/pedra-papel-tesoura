@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra papel tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="score">
+            <div class="box">
+                <h2>Você</h2>
+                <h1 class="humanScore"></h1>
+            </div>
+            <h1>VS</h1>
+            <div class="box">
+                <h2>Máquina</h2>
+                <h1 class="botScore"></h1>
+            </div>
+        </div>
+    
+        <div class="combat">
+            <div class="humanOption gun"></div>
+            <div class="botOption gun"></div>
+        </div>
+    
+        <div class="humanOptions">
+            <div class="option scissors">
+                <img src="./images/icon-scissors.svg" />
+            </div>
+            <div class="option paper">
+                <img src="./images/icon-paper.svg" />
+            </div>        
+            <div class="option rock">
+                <img src="./images/icon-rock.svg" />
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        game.setScore(document.querySelector(".humanScore"),
+                      document.querySelector(".botScore"))
+        game.selectMachineOption()
+        
+    </script>
+</body>
+</html>

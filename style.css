@@ -1,0 +1,80 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    background: #060a18;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.score{
+    display: flex;
+    color: #fff;
+    background: #1d2133;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 7px;
+    border: 5px solid #fff;
+}
+.box{
+    text-align: center;
+}
+.combat{
+    width: 400px;
+    background: #1d2133;
+    border: 5px solid #fff;
+    height: 50vh;
+    border-radius: 7px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+}
+.gun{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.humanOptions{
+    display: flex;
+    color: #fff;
+    background: #1d2133;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 7px;
+    border: 5px solid #fff;
+}
+.option{
+    background: transparent;
+    border-radius: 100%;
+    padding: 5px;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    transition: background .5s;
+}
+.option:hover{
+    background: #060a18;
+    opacity: .5;
+}
