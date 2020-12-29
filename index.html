@@ -26,13 +26,13 @@
         </div>
     
         <div class="humanOptions">
-            <div class="option scissors">
+            <div class="option scissors" onclick="game.selectHumanOption(3)">
                 <img src="./images/icon-scissors.svg" />
             </div>
-            <div class="option paper">
+            <div class="option paper" onclick="game.selectHumanOption(1)">
                 <img src="./images/icon-paper.svg" />
             </div>        
-            <div class="option rock">
+            <div class="option rock" onclick="game.selectHumanOption(2)">
                 <img src="./images/icon-rock.svg" />
             </div>
         </div>
@@ -41,9 +41,7 @@
     <script src="./script.js"></script>
     <script>
         game.setScore(document.querySelector(".humanScore"),
-                      document.querySelector(".botScore"))
-        game.selectMachineOption()
-        
+                      document.querySelector(".botScore"))        
     </script>
 </body>
 </html>
